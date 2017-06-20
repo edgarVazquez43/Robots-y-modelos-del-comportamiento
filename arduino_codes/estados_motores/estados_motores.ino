@@ -1,13 +1,13 @@
-/* Coding by  Edgar V.
+/* Coding by  Edgar Vazquez.
  * Este programa muestra los 5 estados de un robot movil
  * se utiliza un puente H L298. Por tanto se utilizan los
  * pines de direccion 2, 3, 4, 5.
+ * 
+ * Este programa no utiliza el control de velocidad por lo tanto verifcar 
+ * si los pines ENB (enable) del punete H estan concetados a 5V.
  */
 
 void setup() {
-  // put your setup code here, to run once:
-
-  //Motor derecho
   /* 
    *  El numero 2 se refiere al pin fisico de la 
    *  tarjeta arduino. Que en este caso se declara como 
@@ -19,7 +19,6 @@ void setup() {
     // Esta configuracion depende de como conectaron su motor
     // La etiqueta es solo representativa.
 
-    
     //Motor derecho
     pinMode(2, OUTPUT);
     pinMode(3, OUTPUT);
@@ -92,7 +91,6 @@ void Stop(int time)
 
 
 void loop() {
-  // put your main code here, to run repeatedly:
 
   //Tiempo en milliseconds
   avanza(100);

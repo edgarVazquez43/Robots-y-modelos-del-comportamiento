@@ -7,7 +7,8 @@
  * de los motores
  */
 
-// pines que controlaran la velocidad
+// pines que controlaran la velocidad del motor derecho e izquierdo
+// Estos pines deben ir al puente H en los pines de Enable
 int pinPWM_D = 3;
 int pinPWM_I = 5;
 
